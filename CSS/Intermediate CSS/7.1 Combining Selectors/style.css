@@ -1,0 +1,25 @@
+/* combining selectors */
+h1, h2 {
+    color: blueviolet;
+}
+
+/* parent child selector -> immediate children of parent, i.e. 1 level down */
+.box > p {
+    color: firebrick;
+}
+
+/* descendant combination, i.e. descendant may be many levels deep */
+.box li {
+    color: blue;
+}
+
+/* chaining selectors -> specific selector, no space between selectors */
+
+li.done {
+    color: seagreen;
+}
+
+/* combining combiners */
+ul > p.done {
+    font-size: 0.5rem;
+}
